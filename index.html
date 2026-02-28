@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/logo-ljc2.png" />
+    <title>CV. LAJU JAYA CEMERLANG — CORA | NextIDEA</title>
+    <meta
+      name="description"
+      content="Company Profile CV. LAJU JAYA CEMERLANG — Consumer Goods Distributor."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      /* Tooltip ringan tanpa library */
+      .tt {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .tt .tip {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin-top: 0.6rem;
+        z-index: 50;
+        width: max-content;
+        max-width: 18rem;
+        padding: 0.6rem 0.75rem;
+        border-radius: 0.75rem;
+        border: 1px solid rgb(226 232 240);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        color: rgb(51 65 85);
+        opacity: 0;
+        transform: translateY(-4px);
+        pointer-events: none;
+        transition: opacity 0.12s ease, transform 0.12s ease;
+      }
+      .tt:hover .tip,
+      .tt:focus-within .tip {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .tt .tip:before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 14px;
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.95);
+        border-left: 1px solid rgb(226 232 240);
+        border-top: 1px solid rgb(226 232 240);
+        transform: rotate(45deg);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Supaya anchor tidak ketutup sticky header */
+      section[id] {
+        scroll-margin-top: 88px;
+      }
+
+      /* Nav underline aktif */
+      .nav-link {
+        position: relative;
+        padding-bottom: 0.35rem;
+        display: inline-block;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background: #1f2a6b;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.15s ease;
+      }
+      .nav-link.is-active::after {
+        transform: scaleX(1);
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900">
+    <!-- Top bar -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200"
+      data-aos="fade-down"
+      data-aos-duration="1600"
+    >
+      <div
+        class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-3"
+      >
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 flex items-center justify-center">
+            <img src="assets/logo-ljc.png" alt="Logo CV. LAJU JAYA CEMERLANG" />
+          </div>
+          <div class="leading-tight">
+            <div class="font-semibold tracking-tight">CV. LAJU JAYA CEMERLANG</div>
+            <div class="text-xs text-slate-600">Consumer Goods Distributor</div>
+          </div>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-4 text-sm" id="topNav">
+          <a class="nav-link hover:text-[#1f2a6b]" href="#profil">Profil</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#visi-misi">Visi & Misi</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#legalitas">Legalitas</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#organisasi">Organisasi</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#sarana">Sarana</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#manajemen">Manajemen</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#principal">Principal</a>
+          <a class="nav-link hover:text-[#1f2a6b]" href="#alamat">Alamat</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a
+            href="original.html"
+            class="hidden sm:inline-flex items-center justify-center rounded-lg border border-slate-300 px-3 py-2 text-sm font-semibold hover:bg-slate-100"
+          >
+            Download
+          </a>
+
+          <!-- Hamburger (mobile) -->
+          <button
+            id="menuBtn"
+            type="button"
+            class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-300 px-3 py-2 hover:bg-slate-100"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Buka menu"
+          >
+            <svg
+              id="iconHamburger"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              id="iconClose"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu dropdown -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-slate-200 bg-white/95 backdrop-blur"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2 text-sm">
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#profil">Profil</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#visi-misi">Visi & Misi</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#legalitas">Legalitas</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#organisasi">Organisasi</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#sarana">Sarana</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#manajemen">Manajemen</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#principal">Principal</a>
+          <a class="nav-link hover:text-[#1f2a6b] py-1" href="#alamat">Alamat</a>
+
+          <a
+            href="original.html"
+            class="mt-2 inline-flex items-center justify-center rounded-lg border border-slate-300 px-3 py-2 text-sm font-semibold hover:bg-slate-100"
+          >
+            Download
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="overflow-hidden" data-aos="zoom-out" data-aos-duration="1600">
+      <div class="inset-0">
+        <img
+          src="assets/page-1.png"
+          alt="Cover Company Profile"
+          class="h-full w-full object-cover"
+        />
+        <div class="inset-0 bg-gradient-to-r from-white/95 via-white/75 to-white/30"></div>
+      </div>
+    </section>
+
+    <!-- Profil -->
+    <section id="profil" class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="assets/new-page-3.png"
+          alt="Background Profil"
+          class="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-white/60"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-6xl px-4 py-14">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center mt-4">
+          <div data-aos="fade-down">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
+              Profil Singkat
+            </h2>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+              CV. Laju Jaya Cemerlang merupakan perusahaan distributor consumer
+              goods yang berfokus pada pelayanan prima, distribusi yang tepat
+              sasaran, serta membangun kemitraan jangka panjang untuk mendukung
+              pertumbuhan bisnis yang berkelanjutan.
+            </p>
+          </div>
+
+          <div
+            class="rounded-3xl shadow-xl cursor-pointer overflow-hidden border border-slate-200 bg-white/90 shadow-sm backdrop-blur transition hover:scale-[1.02] duration-150"
+            data-aos="fade-left"
+          >
+            <img
+              src="assets/page-2.png"
+              alt="Cover PDF"
+              class="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section id="visi-misi" class="bg-white border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div
+            class="rounded-3xl shadow-xl overflow-hidden border border-slate-200 shadow-sm transition hover:scale-[1.02] duration-150 bg-white/90 cursor-pointer backdrop-blur"
+            data-aos="fade-right"
+          >
+            <img src="assets/page-3.png" alt="Visi dan Misi" class="w-full h-auto" loading="lazy" />
+          </div>
+
+          <div data-aos="fade-left">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-2">
+              Visi & Misi
+            </h2>
+
+            <div class="mt-6 space-y-4">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:bg-slate-100 transition duration-150 cursor-pointer">
+                <div class="text-sm font-semibold text-[#1f2a6b]">Visi</div>
+                <p class="mt-2 text-slate-700 leading-relaxed">
+                  MENJADI YANG TERBAIK DALAM DISTRIBUSI DAN OMZET.
+                </p>
+                <p class="mt-3 text-sm text-slate-600">
+                  Teamwork, Innovation, and Creativity.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:bg-slate-100 transition duration-150 cursor-pointer">
+                <div class="text-sm font-semibold text-[#1f2a6b]">Misi</div>
+                <p class="mt-2 text-slate-700 leading-relaxed">
+                  MELAKUKAN DISTRIBUSI YANG BAIK & BENAR UNTUK MENCIPTAKAN & MENINGKATKAN PERMINTAAN.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legalitas -->
+    <section id="legalitas" class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="assets/new-page-1.png"
+          alt="Background Legalitas"
+          class="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white/50 via-white/50 to-white/40"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-6xl px-4 py-14">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-4">
+              Legalitas
+            </h2>
+            <p class="mt-3 text-slate-700 leading-relaxed">
+              Ringkasan informasi legalitas yang tercantum dalam dokumen.
+            </p>
+
+            <div class="mt-6 rounded-2xl border border-slate-200 bg-white/90 p-6 backdrop-blur shadow-xl">
+              <dl class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <dt class="text-xs font-semibold text-slate-500">No. NPWP</dt>
+                  <dd class="mt-1">
+                    <a
+                      href="https://www.pajak.go.id/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="tt rounded-lg px-2 py-1 inline-flex font-semibold text-slate-900 hover:text-[#1f2a6b] hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25"
+                      title="Buka DJP (Pajak) untuk informasi dan layanan terkait NPWP"
+                    >
+                      85.255.274.4-608.000
+                      <span class="tip">
+                        Verifikasi/layanan NPWP dilakukan melalui portal resmi
+                        Direktorat Jenderal Pajak (pajak.go.id / DJP Online).
+                      </span>
+                    </a>
+                  </dd>
+                </div>
+
+                <div>
+                  <dt class="text-xs font-semibold text-slate-500">Nama NPWP</dt>
+                  <dd class="mt-1">
+                    <a
+                      href="https://www.pajak.go.id/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="tt rounded-lg px-2 py-1 inline-flex font-semibold text-slate-900 hover:text-[#1f2a6b] hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25"
+                      title="Buka DJP (Pajak) untuk informasi dan layanan terkait NPWP"
+                    >
+                      CV. LAJU JAYA CEMERLANG
+                      <span class="tip">
+                        Informasi identitas Wajib Pajak dan layanan terkait NPWP
+                        tersedia di portal resmi DJP.
+                      </span>
+                    </a>
+                  </dd>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <dt class="text-xs font-semibold text-slate-500">Alamat NPWP</dt>
+                  <dd class="mt-1">
+                    <a
+                      href="#alamat"
+                      class="tt rounded-lg px-2 py-1 inline-flex text-sm text-slate-700 hover:text-[#1f2a6b] hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25"
+                      title="Lihat lokasi kantor pada section Alamat Kantor"
+                    >
+                      Dsn Bulung No. Rt,006 Rw,002 Dasok Pademawu Kab. Pamekasan Jawa Timur
+                      <span class="tip">Klik untuk menuju section “Alamat Kantor” di halaman ini.</span>
+                    </a>
+                  </dd>
+                </div>
+
+                <div>
+                  <dt class="text-xs font-semibold text-slate-500">No. PPKP</dt>
+                  <dd class="mt-1">
+                    <a
+                      href="https://www.pajak.go.id/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="tt rounded-lg px-1 py-1 inline-flex font-semibold text-slate-900 hover:text-[#1f2a6b] hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25"
+                      title="Buka DJP untuk informasi PKP dan layanan terkait"
+                    >
+                      S-393PKP/WPJ.24/KP.0703/2018
+                      <span class="tip">Status/layanan terkait PKP dikelola melalui kanal resmi DJP.</span>
+                    </a>
+                  </dd>
+                </div>
+
+                <div>
+                  <dt class="text-xs font-semibold text-slate-500">No. Domisili</dt>
+                  <dd class="mt-1">
+                    <a
+                      href="https://oss.go.id/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="tt rounded-lg px-2 py-1 inline-flex font-semibold text-slate-900 hover:text-[#1f2a6b] hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25"
+                      title="Buka OSS untuk informasi perizinan berusaha / NIB"
+                    >
+                      9120403791671
+                      <span class="tip">NIB terkait perizinan berusaha dikelola melalui portal resmi OSS (oss.go.id).</span>
+                    </a>
+                  </dd>
+                </div>
+
+              </dl>
+            </div>
+          </div>
+          <div
+            class="rounded-3xl shadow-xl overflow-hidden border border-slate-200 bg-white/90 shadow-sm backdrop-blur"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a href="assets/page-4.png">
+              <img
+              src="assets/page-4-thumb.png"
+              alt="Preview tabel principal"
+              class="w-full h-auto transition hover:scale-[1.02] duration-150 cursor-pointer"
+              loading="lazy"
+              />
+            </a>
+          </div>
+          <!-- <div
+            class="rounded-3xl shadow-xl overflow-hidden border border-slate-200 bg-white/90 shadow-sm backdrop-blur"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <img
+              src="assets/page-3.png"
+              alt="Halaman legalitas"
+              class="w-full h-auto transition hover:scale-[1.02] duration-150 bg-white/90 cursor-pointer backdrop-blur"
+              loading="lazy"
+            />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Organisasi -->
+    <section id="organisasi" class="bg-white border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div data-aos="fade-right" data-aos-duration="800">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-2">
+              Struktur Organisasi
+            </h2>
+            <p class="mt-3 text-slate-700 leading-relaxed">
+              Struktur organisasi pada dokumen cukup detail. Untuk menjaga
+              akurasi visual, bagian ini disajikan sebagai diagram.
+            </p>
+          </div>
+          <a
+            href="assets/page-5.png"
+            class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100"
+            data-aos="fade-left"
+          >
+            Buka gambar
+          </a>
+        </div>
+
+        <div
+          class="mt-8 rounded-3xl shadow-xl overflow-hidden border border-slate-200 bg-white shadow-sm"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <img
+            src="assets/page-5.png"
+            alt="Struktur organisasi"
+            class="w-full h-auto transition hover:scale-[1.02] duration-150 cursor-pointer"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sarana -->
+    <section id="sarana" class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src="assets/new-page-3.png"
+          alt="Background Sarana"
+          class="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-white/50"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-6xl px-4 py-14">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div
+            class="rounded-3xl shadow-xl overflow-hidden border border-slate-200 bg-white/90 shadow-sm backdrop-blur"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img
+              src="assets/page-7.png"
+              alt="Sarana"
+              class="w-full h-auto transition hover:scale-[1.02] duration-150 cursor-pointer"
+              loading="lazy"
+            />
+          </div>
+
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-2">
+              Sarana & Cakupan Wilayah
+            </h2>
+
+            <div class="mt-4 grid gap-4">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="800"
+                class="rounded-2xl border border-slate-200 bg-white/90 p-6 backdrop-blur"
+              >
+                <div class="text-sm font-semibold text-[#1f2a6b]">Armada Distribusi</div>
+
+                <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                  <div class="rounded-lg bg-slate-100/80 p-2 backdrop-blur hover:shadow-xl transition cursor-pointer">
+                    <div class="text-xs font-semibold text-slate-500">Pamekasan</div>
+                    <ul class="mt-2 text-xs text-slate-700 list-disc pl-5 space-y-1">
+                      <li>5 truk double</li>
+                      <li>8 truk engkel long</li>
+                      <li>4 truk engkel</li>
+                      <li>6 pick up box</li>
+                      <li>8 blind van</li>
+                      <li>2 mobil dinas</li>
+                    </ul>
+                  </div>
+
+                  <div class="rounded-lg bg-slate-100/50 p-2 backdrop-blur hover:shadow-xl transition cursor-pointer">
+                    <div class="text-xs font-semibold text-slate-500">Bangkalan</div>
+                    <ul class="mt-2 text-xs text-slate-700 list-disc pl-5 space-y-1">
+                      <li>3 truk engkel</li>
+                      <li>2 truk doubel</li>
+                      <li>4 truk long</li>
+                      <li>1 pick up box</li>
+                      <li>2 blind van</li>
+                    </ul>
+                  </div>
+
+                  <div class="rounded-lg bg-slate-100/50 p-2 backdrop-blur hover:shadow-xl transition cursor-pointer">
+                    <div class="text-xs font-semibold text-slate-500">Surabaya</div>
+                    <ul class="mt-2 text-xs text-slate-700 list-disc pl-5 space-y-1">
+                      <li>1 truk engkel</li>
+                      <li>3 pick up box</li>
+                      <li>1 blind van</li>
+                      <li>1 mobil dinas</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="800"
+                class="rounded-2xl border border-slate-200 bg-white/90 p-6 backdrop-blur"
+              >
+                <div class="text-sm font-semibold text-[#1f2a6b]">Fasilitas</div>
+                <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                  <div class="rounded-lg bg-slate-100/80 p-2 backdrop-blur hover:shadow-xl transition cursor-pointer">
+                    <div class="text-xs font-semibold text-slate-500">Pamekasan</div>
+                    <div class="mt-2 text-xs text-slate-700 space-y-1">
+                      <div>Luas gudang: ± 5000 m²</div>
+                      <div>Luas kantor: ± 450 m²</div>
+                      <div>Komputer: 29 unit</div>
+                    </div>
+                  </div>
+
+                  <div class="rounded-lg bg-slate-100/50 p-2 backdrop-blur hover:shadow-xl transition cursor-pointer">
+                    <div class="text-xs font-semibold text-slate-500">Bangkalan</div>
+                    <div class="mt-2 text-xs text-slate-700 space-y-1">
+                      <div>Luas gudang: ± 1500 m²</div>
+                      <div>Luas kantor: ± 220 m²</div>
+                      <div>Komputer: 7 unit</div>
+                    </div>
+                  </div>
+                  
+                  <div class="rounded-lg bg-slate-100/50 p-2 backdrop-blur hover:shadow-xl transition cursor-pointer">
+                    <div class="text-xs font-semibold text-slate-500">Surabaya</div>
+                    <div class="mt-2 text-xs text-slate-700 space-y-1">
+                      <div>Luas gudang: ± 1000 m²</div>
+                      <div>Luas kantor: ± 25 m²</div>
+                      <div>Komputer: 4 unit</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="800"
+                class="rounded-2xl border border-slate-200 bg-white/90 p-6 backdrop-blur"
+              >
+                <div class="text-sm font-semibold text-[#1f2a6b]">Cakupan Wilayah</div>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-[#1f2a6b]/10 px-3 py-1 text-sm font-semibold text-[#1f2a6b] transition hover:bg-[#1f2a6b]/20 cursor-pointer">Pamekasan</span>
+                  <span class="rounded-full bg-[#1f2a6b]/10 px-3 py-1 text-sm font-semibold text-[#1f2a6b] transition hover:bg-[#1f2a6b]/20 cursor-pointer">Sumenep</span>
+                  <span class="rounded-full bg-[#1f2a6b]/10 px-3 py-1 text-sm font-semibold text-[#1f2a6b] transition hover:bg-[#1f2a6b]/20 cursor-pointer">Sampang</span>
+                  <span class="rounded-full bg-[#1f2a6b]/10 px-3 py-1 text-sm font-semibold text-[#1f2a6b] transition hover:bg-[#1f2a6b]/20 cursor-pointer">Bangkalan</span>
+                  <span class="rounded-full bg-[#1f2a6b]/10 px-3 py-1 text-sm font-semibold text-[#1f2a6b] transition hover:bg-[#1f2a6b]/20 cursor-pointer">Surabaya</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manajemen -->
+    <section id="manajemen" class="bg-white border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div data-aos="fade-down" data-aos-duration="800">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-2">
+              Manajemen Perusahaan
+            </h2>
+            <p class="mt-3 text-slate-700 leading-relaxed">
+              Ringkasan komposisi personel per divisi (Pamekasan - Bangkalan - Surabaya)
+              sebagaimana tercantum pada dokumen.
+            </p>
+
+            <div
+              class="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-xl bg-white"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="px-5 py-4 border-b border-slate-200 bg-slate-50">
+                <div class="text-sm font-semibold text-slate-900">Komposisi Personel</div>
+                <div class="text-xs text-slate-600">Angka mengikuti tabel pada dokumen.</div>
+              </div>
+
+              <div class="p-5">
+                <div class="grid gap-3 text-sm">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Sales Manager</span>
+                    <span class="font-semibold">2</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Sales Support Coordinator</span>
+                    <span class="font-semibold">4</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Sales Supervisor</span>
+                    <span class="font-semibold">12</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Sales Taking Order</span>
+                    <div class="font-semibold gap-3"> <span>PMK 50</span> • <span>BKL 20</span> • <span>SBY 5</span></div>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Sales Below The Line</span>
+                    <span class="font-semibold">PMK 12 • BKL 0 • SBY 0</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Sales Institusi</span>
+                    <span class="font-semibold">PMK 1 • BKL 1 • SBY 0</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Delivery</span>
+                    <span class="font-semibold">PMK 44 • BKL 18 • SBY 4</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Administrasi Kantor</span>
+                    <span class="font-semibold">PMK 17 • BKL 5 • SBY 3</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="text-slate-700">Warehouse</span>
+                    <span class="font-semibold">PMK 24 • BKL 11 • SBY 2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-4 text-xs text-slate-500" data-aos="fade-up" data-aos-duration="800">
+              Untuk detail visual lengkap, lihat halaman asli pada gambar di samping.
+            </p>
+          </div>
+
+          <div class="rounded-3xl shadow-xl overflow-hidden border border-slate-200 bg-white shadow-sm" data-aos="zoom-in-left">
+            <img
+              src="assets/page-6.png"
+              alt="Manajemen perusahaan"
+              class="w-full h-auto transition hover:scale-[1.02] duration-150 cursor-pointer"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principal -->
+    <section id="principal" class="mx-auto max-w-6xl px-4 py-14">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-2">
+            Daftar Principal
+          </h2>
+          <p class="mt-3 text-slate-700 leading-relaxed">
+            Data principal & produk diambil dari tabel pada dokumen. Gunakan pencarian untuk filter cepat.
+          </p>
+        </div>
+
+        <a
+          href="assets/page-9.png"
+          class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100"
+        >
+          Lihat gambar tabel
+        </a>
+      </div>
+
+      <div class="mt-6 grid gap-4 lg:grid-cols-3">
+        <div class="lg:col-span-1">
+          <div class="rounded-2xl border border-slate-200 bg-white p-5" data-aos="fade-right" data-aos-duration="800">
+            <label class="text-xs font-semibold text-slate-500">Cari principal / produk</label>
+            <input
+              id="search"
+              type="text"
+              placeholder="Contoh: MAKUKU, MARIMAS, NOMOS..."
+              class="mt-2 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/30"
+            />
+            <div class="mt-3 text-xs text-slate-600">
+              <span class="font-bold">Total item:</span>
+              <span id="count">40</span>
+            </div>
+            <div class="mt-2 text-xs text-slate-600">
+              <span class="font-bold">Catatan:</span> Buka gambar tabel untuk referensi visual lengkap.
+            </div>
+          </div>
+
+          <div class="mt-4 rounded-2xl shadow-xl overflow-hidden border border-slate-200 bg-white shadow-sm" data-aos="fade-right" data-aos-duration="1500">
+            <a href="assets/page-9.png">
+              <img
+              src="assets/page-9-thumb.png"
+              alt="Preview tabel principal"
+              class="w-full h-auto transition hover:scale-[1.02] duration-150 cursor-pointer"
+              loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl" data-aos="fade-up" data-aos-duration="1800">
+            <div class="px-5 py-4 border-b border-slate-200 bg-slate-50 flex items-center justify-between">
+              <div class="text-sm font-semibold text-slate-900">Principal & Produk</div>
+              <div class="text-xs text-slate-600">Klik baris untuk menyalin nama principal</div>
+            </div>
+
+            <div class="min-h-[560px] max-h-[560px] overflow-auto">
+              <table class="min-w-full text-left text-sm">
+                <thead class="sticky top-0 bg-white">
+                  <tr class="border-b border-slate-200">
+                    <th class="px-4 py-3 w-14 text-xs font-semibold text-slate-500">No</th>
+                    <th class="px-4 py-3 text-xs font-semibold text-slate-500">Nama Principal</th>
+                    <th class="px-4 py-3 text-xs font-semibold text-slate-500">Produk</th>
+                  </tr>
+                </thead>
+                <tbody id="principalRows" class="divide-y divide-slate-100"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alamat Kantor -->
+    <section id="alamat" class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="assets/new-page-1.png" alt="Cover Company Profile" class="h-full w-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-white/50 via-white/50 to-white/30"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-6xl px-4 py-10 md:py-24">
+        <div>
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">Alamat Kantor Kami</h2>
+            <p>Hubungi kami atau kunjungi kantor cabang untuk informasi lebih lanjut.</p>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-3">
+            <!-- CARD: PAMEKASAN -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="js-office rounded-2xl bg-white/85 border border-slate-200 p-5 cursor-pointer hover:bg-slate-50 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25 transition duration-150"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="mapModal"
+              data-office="pamekasan"
+            >
+              <div class="text-md font-semibold text-slate-900">CV. LAJU JAYA CEMERLANG - PAMEKASAN</div>
+              <div class="mt-2 text-sm text-slate-700">
+                Jl. Raya Dasok Dsn. Bulung Kec. Pademawu – Pamekasan
+              </div>
+              <div class="mt-2 text-sm text-slate-700">Telp. 0324-327999</div>
+              <div class="mt-2 text-sm text-slate-700">Email: lajujayacemerlang@gmail.com</div>
+              <div class="mt-4 text-xs font-semibold text-[#1f2a6b]">Klik untuk buka peta & rute</div>
+            </div>
+
+            <!-- CARD: BANGKALAN -->
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="js-office rounded-2xl bg-white/85 border border-slate-200 p-5 cursor-pointer hover:bg-slate-50 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25 transition duration-150"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="mapModal"
+              data-office="bangkalan"
+            >
+              <div class="text-md font-semibold text-slate-900">CV. LAJU JAYA CEMERLANG - BANGKALAN</div>
+              <div class="mt-2 text-sm text-slate-700">
+                Jl. Raya Patemon Ds. Poter Kec. Tanah Merah – Bangkalan
+              </div>
+              <div class="mt-2 text-sm text-slate-700">Email: lajujayacemerlang@gmail.com</div>
+              <div class="mt-4 text-xs font-semibold text-[#1f2a6b]">Klik untuk buka peta & rute</div>
+            </div>
+
+            ss
+            <!-- CARD: SURABAYA -->
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="js-office rounded-2xl bg-white/85 border border-slate-200 p-5 cursor-pointer hover:bg-slate-50 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25 transition duration-150"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="mapModal"
+              data-office="surabaya"
+            >
+              <div class="text-md font-semibold text-slate-900">CV. LAJU JAYA CEMERLANG - SURABAYA</div>
+              <div class="mt-2 text-sm text-slate-700">
+                Sentra Pergudangan Bambe No. C7 - C8 – Gresik
+              </div>
+              <div class="mt-2 text-sm text-slate-700">Email: lajujayacemerlang@gmail.com</div>
+              <div class="mt-4 text-xs font-semibold text-[#1f2a6b]">Klik untuk buka peta & rute</div>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#principal"
+              class="rounded-lg bg-[#f3c24c] px-4 py-2 text-sm font-semibold text-slate-900 hover:opacity-90 transition duration-150 transform hover:scale-105"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              Lihat daftar principal
+            </a>
+            <a
+              href="#sarana"
+              class="rounded-lg border border-slate-300 bg-white/70 px-4 py-2 text-sm font-semibold hover:bg-white/90 transition duration-150"
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+            >
+              Sarana & cakupan wilayah
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Closing -->
+    <footer class="bg-slate-900 text-slate-100" data-aos="fade-up" data-aos-duration="1000">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <div class="grid gap-8 md:grid-cols-2">
+          <div>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-lg bg-white/90 flex items-center justify-center font-bold">
+                <img src="assets/logo-ljc.png" alt="Logo CV. LAJU JAYA CEMERLANG" />
+              </div>
+              <div>
+                <div class="font-semibold">CV. LAJU JAYA CEMERLANG</div>
+                <div class="text-xs text-slate-300">Consumer Goods Distributor</div>
+              </div>
+            </div>
+
+            <p class="mt-4 text-sm text-slate-300 leading-relaxed">
+              Terima kasih telah mengunjungi profil perusahaan kami. Untuk informasi lebih lanjut, silakan unduh versi dokumen kami.
+            </p>
+
+            <div class="mt-4 flex gap-3">
+              <a href="original.html" class="rounded-lg bg-white/40 px-4 py-2 text-sm font-semibold hover:bg-white/30">Download</a>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-sm font-semibold">Kontak</div>
+
+            <div class="mt-3 text-sm text-slate-300 space-y-2">
+              <div>
+                <span class="font-semibold text-slate-100">Pemekasan</span> :
+                <a href="tel:0324-327999" class="font-semibold text-slate-100 no-underline hover:text-white hover:underline">
+                  0324-327999
+                </a>
+              </div>
+
+              <div>
+                <span class="font-semibold text-slate-100">Bangkalan</span> :
+                <a href="tel:0324-327999" class="font-semibold text-slate-100 no-underline hover:text-white hover:underline">
+                  -
+                </a>
+              </div>
+              <div>
+                <span class="font-semibold text-slate-100">Pamekasan</span> :
+                <a href="tel:0324-327999" class="font-semibold text-slate-100 no-underline hover:text-white hover:underline">
+                  -
+                </a>
+              </div>
+
+              <div>
+                Email:
+                <a href="mailto:lajujayacemerlang@gmail.com" class="font-semibold text-slate-100 no-underline hover:text-white hover:underline">
+                  lajujayacemerlang@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-2 border-t border-white/10 text-xs text-slate-400">
+          © CV. LAJU JAYA CEMERLANG • Consumer Goods Distributor.
+        </div>
+        <div class="mt-4 text-xs text-slate-400">
+          <p class="text-center">Powered by CORA | NextIDEA</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL: Google Maps -->
+    <div id="mapModal" class="fixed inset-0 z-[9999] hidden" aria-hidden="true">
+      <div class="absolute inset-0 bg-black/50" data-close="overlay"></div>
+
+      <div class="relative mx-auto max-w-5xl h-full px-4 py-8">
+        <div
+          class="rounded-2xl bg-white shadow-xl border border-slate-200 overflow-hidden"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modalTitle"
+        >
+          <div class="p-5 border-b border-slate-200 flex items-start justify-between gap-4">
+            <div>
+              <div id="modalTitle" class="text-lg font-bold text-slate-900">Lokasi Kantor</div>
+              <div id="modalSubtitle" class="mt-1 text-sm text-slate-600">—</div>
+            </div>
+
+            <button
+              id="modalClose"
+              class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-semibold hover:bg-slate-100"
+              type="button"
+            >
+              Tutup
+            </button>
+          </div>
+
+          <div class="p-5">
+            <div class="grid gap-4 lg:grid-cols-5">
+              <div class="lg:col-span-3">
+                <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50">
+                  <iframe
+                    id="modalMapFrame"
+                    title="Google Maps"
+                    class="w-full h-[320px]"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="about:blank"
+                  ></iframe>
+                </div>
+                <p class="mt-2 text-xs text-slate-500">
+                  Jika map tidak tampil, klik “Buka lokasi di Google Maps”.
+                </p>
+              </div>
+
+              <div class="lg:col-span-2">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                  <div class="text-sm font-semibold text-slate-900">Aksi</div>
+
+                  <a
+                    id="btnOpenMaps"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-3 block text-center w-full rounded-lg bg-[#1f2a6b] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-95"
+                  >
+                    Buka lokasi di Google Maps
+                  </a>
+
+                  <a
+                    id="btnFallbackRoute"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-2 block text-center w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-semibold hover:bg-slate-100"
+                  >
+                    Rute dari lokasi saya
+                  </a>
+
+                  <div
+                    id="modalStatus"
+                    class="mt-3 text-xs text-slate-600 rounded-lg bg-slate-50 border border-slate-200 p-3"
+                  >
+                    Tips: izin lokasi harus disetujui. Geolocation biasanya hanya jalan di HTTPS / localhost.
+                  </div>
+                </div>
+
+                <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div class="text-xs font-semibold text-slate-500">Alamat</div>
+                  <div id="modalAddress" class="mt-2 text-sm text-slate-700">—</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-5 py-4 border-t border-slate-200 bg-slate-50 text-xs text-slate-600">
+            Privasi: lokasi kamu hanya dipakai untuk membuat link rute Google Maps, tidak disimpan di website.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- back to top button -->
+    <button
+      id="backToTop"
+      type="button"
+      aria-label="Kembali ke atas"
+      class="fixed bottom-5 right-5 z-[60] hidden items-center gap-2 rounded-full border border-slate-200 bg-blue-500/90 px-4 py-4 text-sm font-semibold text-slate-900 shadow-lg backdrop-blur transition hover:bg-blue-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#1f2a6b]/25"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4"
+        fill="none"
+        color="white"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="4"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+
+    <!-- Script -->
+    <script src="./app.js"></script>
+  </body>
+</html>
